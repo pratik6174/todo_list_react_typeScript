@@ -67,7 +67,7 @@ const Todos: React.FC<ToDoProviderProps> = ({ children }) => {
   const handleDeleteToDo= (id: string)=>{
     setTodos((prev)=>{
       let newToDO= prev.filter(todo=> todo.id != id);
-      localStorage.setItem("todos",JSON.stringify(newToDo));
+      localStorage.setItem("todos",JSON.stringify(newToDO));
       return newToDO;
     })
   }
